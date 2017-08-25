@@ -1,0 +1,34 @@
+<table>
+
+	<tr>
+		<td><a href="displaystock">Book Store</a></td>
+	</tr>
+	
+	<%
+	if(session.getAttribute("CARTSIZE")==null){
+		%>
+		
+		 <tr>
+		<td><a href="showcart">My Cart</a></td>
+	</tr>
+		<%
+	}else{
+		int cart = (Integer)session.getAttribute("CARTSIZE");
+		if(cart==0){
+		%>
+		
+		There is no items
+		<%}
+	%>
+	
+	 <tr>
+		<td><a href="showcart">My Cart(<%=cart %>)</a></td>
+	</tr>
+	<%
+	}
+	%>
+	
+	<td><a href="logout">Logout</a></td>
+	 
+</table>
+

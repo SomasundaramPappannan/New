@@ -1,0 +1,16 @@
+127.0.0.1 - - [25/Aug/2017:00:04:21 +0200] "GET /bookstore-ws/rest/bookservice/displayall HTTP/1.1" 200 694
+0:0:0:0:0:0:0:1 - - [25/Aug/2017:00:04:21 +0200] "GET /bookstore-ws/displaystock HTTP/1.1" 200 2737
+127.0.0.1 - - [25/Aug/2017:00:04:24 +0200] "GET /bookstore-ws/rest/bookservice/displayall HTTP/1.1" 200 694
+0:0:0:0:0:0:0:1 - - [25/Aug/2017:00:04:24 +0200] "GET /bookstore-ws/showbookdetails?bookId=1 HTTP/1.1" 200 1852
+127.0.0.1 - - [25/Aug/2017:00:04:31 +0200] "POST /bookstore-ws/rest/bookservice/addbooktocart/1/2 HTTP/1.1" 200 102
+0:0:0:0:0:0:0:1 - - [25/Aug/2017:00:04:31 +0200] "POST /bookstore-ws/addtocart HTTP/1.1" 200 1655
+127.0.0.1 - - [25/Aug/2017:00:04:34 +0200] "GET /bookstore-ws/rest/bookservice/displayall HTTP/1.1" 200 694
+0:0:0:0:0:0:0:1 - - [25/Aug/2017:00:04:34 +0200] "GET /bookstore-ws/displaystock HTTP/1.1" 200 2737
+127.0.0.1 - - [25/Aug/2017:00:04:36 +0200] "GET /bookstore-ws/rest/bookservice/displayall HTTP/1.1" 200 694
+0:0:0:0:0:0:0:1 - - [25/Aug/2017:00:04:36 +0200] "GET /bookstore-ws/showbookdetails?bookId=2 HTTP/1.1" 200 1859
+127.0.0.1 - - [25/Aug/2017:00:04:41 +0200] "POST /bookstore-ws/rest/bookservice/addbooktocart/2/3 HTTP/1.1" 200 205
+0:0:0:0:0:0:0:1 - - [25/Aug/2017:00:04:41 +0200] "POST /bookstore-ws/addtocart HTTP/1.1" 200 1655
+0:0:0:0:0:0:0:1 - - [25/Aug/2017:00:04:44 +0200] "GET /bookstore-ws/showcart HTTP/1.1" 200 1778
+127.0.0.1 - - [25/Aug/2017:00:04:44 +0200] "POST /bookstore-ws/rest/bookservice/showcart HTTP/1.1" 200 205
+127.0.0.1 - - [25/Aug/2017:00:04:48 +0200] "POST /bookstore-ws/rest/bookservice/buy HTTP/1.1" 200 5
+0:0:0:0:0:0:0:1 - - [25/Aug/2017:00:04:48 +0200] "POST /bookstore-ws/buy HTTP/1.1" 200 1634

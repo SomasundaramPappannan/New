@@ -1,0 +1,45 @@
+<script type="text/javascript">
+function AlertIt() {
+var answer = confirm ("Please click on OK to continue.")
+if (answer)
+window.location="http://www.continue.com";
+}
+</script>
+
+<a href="javascript:AlertIt();">click me</a>
+
+
+<table>
+
+	<tr>
+		<td><a href="displaystock">Book Store</a></td>
+	</tr>
+	
+	<%
+	if(session.getAttribute("CARTSIZE")==null){
+		%>
+		
+		 <tr>
+		<td><a href="showcart">My Cart</a></td>
+	</tr>
+		<%
+	}else{
+		int cart = (Integer)session.getAttribute("CARTSIZE");
+		if(cart==0){
+		%>
+		
+		There is no items in Cart..!. Please add books in cart
+		<%}
+	%>
+	
+	 <tr>
+		<td><a href="showcart">My Cart(<%=cart %>)</a></td>
+	</tr>
+	<%
+	}
+	%>
+	
+	<td><a href="logout">Logout</a></td>
+	 
+</table>
+

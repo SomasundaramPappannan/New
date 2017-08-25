@@ -1,0 +1,39 @@
+<%@page import="java.util.Iterator"%>
+<%@page import="com.my.bookstore.core.Book"%>
+<%@page import="java.util.List"%>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+	pageEncoding="ISO-8859-1"%>
+<table>
+
+<form action="buy" method="POST">
+	<%
+		if (session.getAttribute("CARTLIST") != null) {
+	%>
+	<tr>
+		<th>Sl.No</th>
+		<th>Name</th>
+		<th>Quantity</th>
+		<th>Price</th>
+	</tr>
+	<%
+		List cartList = (List) session.getAttribute("CARTLIST");
+			Iterator itr = cartList.iterator();
+			int count=1;
+			while (itr.hasNext()) {
+				Book book = (Book) itr.next();
+	%>
+	<tr>
+		<td><%=count %></td>
+		<td><%=book.getTitle()%></td>
+		<td><%=book.getAvailableStock() %></td>
+		<td><%=book.getPrice()%></td>		
+	</tr>
+	
+	<%
+	count++;
+		}
+		}
+	%>
+	<tr><td><input type="submit" value="Click to Buy"/></td></tr>
+	</form>
+</table>

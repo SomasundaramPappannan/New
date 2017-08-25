@@ -1,0 +1,6 @@
+eclipse.preferences.version=1
+org.moreunit.flexiblenaming=true
+org.moreunit.junit_path=src/test/java
+org.moreunit.prefixes=
+org.moreunit.suffixes=Test,IntegrationTest
+org.moreunit.test_type=junit4
